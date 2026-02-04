@@ -24,11 +24,11 @@ public class CarritoControlador {
         carritos.put(carrito.getIdCarrito(), carrito);
         return carrito;
     }
-//
-//    @GetMapping("/api/contadores/{nombre}")
-//    public ModeloContador contador(@PathVariable String nombre) {
-//        return contadores.get(nombre);
-//    }
+
+    @GetMapping("/api/contadores/{idCarrito}")
+    public Carrito getCarrito(@PathVariable int  idCarrito) {
+        return carritos.get(idCarrito);
+    }
 //
 //    @PutMapping("/api/contadores/{nombre}/incremento/{incremento}")
 //    public ModeloContador incrementa(@PathVariable String nombre,
@@ -39,5 +39,11 @@ public class CarritoControlador {
 //        contadores.put(nombre, contadorIncrementado);
 //        return contadorIncrementado;
 //    }
+
+    //Aquí en este caso el Delete es muy parecido al GET
+    @DeleteMapping("/api/carrito/{idCarrito}")
+    public void borrarCarrito(@PathVariable int  idCarrito) {
+        carritos.remove(idCarrito);
+    }
 }
 
