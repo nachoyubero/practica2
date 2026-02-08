@@ -5,7 +5,7 @@ Este proyecto implementa una API REST simplificada para un servicio de e-commerc
 Permite realizar operaciones CRUD (Create, Read, Update, Delete) sobre un recurso `Carrito`.
 
 ## Contexto del Proyecto
-El objetivo es modelar el ciclo de vida de una compr.
+El objetivo es modelar el ciclo de vida de una compra.
 Cada carrito contiene un único producto.
 
 ## Tecnologías Utilizadas
