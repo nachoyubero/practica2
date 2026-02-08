@@ -17,6 +17,8 @@ public class CarritoControlador {
     public Collection<Carrito> getCarritos() {
         return carritos.values();
     }
+
+
     // Aquí se crea el carrito
     @PostMapping("/api/carrito/")
     @ResponseStatus(HttpStatus.CREATED)
@@ -24,13 +26,13 @@ public class CarritoControlador {
         carritos.put(carrito.getIdCarrito(), carrito);
         return carrito;
     }
-
-    @GetMapping("/api/contadores/{idCarrito}")
+    //Hacemos un get para un solo carrito
+    @GetMapping("/api/carrito/{idCarrito}")
     public Carrito getCarrito(@PathVariable int  idCarrito) {
         return carritos.get(idCarrito);
     }
 
-    @PutMapping("/api/contadores/{idCarrito}}")
+    @PutMapping("/api/carrito/{idCarrito}")
     public Carrito modificarCarrito(@PathVariable int idCarrito, @RequestBody Carrito carrito) {
         carritos.put(idCarrito, carrito);
         return carrito;
