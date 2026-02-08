@@ -1,7 +1,7 @@
 
 # Práctica 2: API REST para Gestión de Carritos
 
-Este proyecto implementa una API RESTful simplificada para un servicio de e-commerce, desarrollada con **Spring Boot**. 
+Este proyecto implementa una API REST simplificada para un servicio de e-commerce, desarrollada con **Spring Boot**. 
 Permite realizar operaciones CRUD (Create, Read, Update, Delete) sobre un recurso `Carrito`.
 
 ## Contexto del Proyecto
