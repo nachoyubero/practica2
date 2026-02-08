@@ -31,6 +31,7 @@ public class CarritoControlador {
     @GetMapping("/{idCarrito}")
     public Carrito getCarrito(@PathVariable int  idCarrito) {
         return carritos.get(idCarrito);
+
     }
 
     @PutMapping("/{idCarrito}")
