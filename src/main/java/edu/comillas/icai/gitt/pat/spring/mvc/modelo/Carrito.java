@@ -7,6 +7,10 @@ public class Carrito {
     private int unidades;
     private double precio;
 
+    public Carrito(){
+
+    }
+
     public Carrito(int idCarrito, int idArticulo, String descripcion, int unidades, double precio) {
         this.idCarrito = idCarrito;
         this.idArticulo = idArticulo;
